@@ -442,3 +442,164 @@ Migrating to AddUsernameToUsers (20190304223916)
   ↳ bin/rails:9
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (2.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mWorkout Load (1.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mWorkout Destroy (1.8ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:2
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mExercise Load (1.4ms)[0m  [1m[34mSELECT "exercises".* FROM "exercises"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mExercise Destroy (1.6ms)[0m  [1m[31mDELETE FROM "exercises" WHERE "exercises"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mExercise Destroy (0.4ms)[0m  [1m[31mDELETE FROM "exercises" WHERE "exercises"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mExercise Destroy (0.4ms)[0m  [1m[31mDELETE FROM "exercises" WHERE "exercises"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mWorkoutExercise Load (0.3ms)[0m  [1m[34mSELECT "workout_exercises".* FROM "workout_exercises"[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mWorkoutExercise Destroy (1.6ms)[0m  [1m[31mDELETE FROM "workout_exercises" WHERE "workout_exercises"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:4
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mWorkoutExercise Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workout_exercises" WHERE "workout_exercises"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:4
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mWorkoutExercise Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workout_exercises" WHERE "workout_exercises"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:4
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "will"], ["created_at", "2019-03-04 22:47:40.742275"], ["updated_at", "2019-03-04 22:47:40.742275"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "megan"], ["created_at", "2019-03-04 22:47:40.747102"], ["updated_at", "2019-03-04 22:47:40.747102"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:9
+  [1m[36mWorkout Create (2.1ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Upper Body A"], ["user_id", 1], ["created_at", "2019-03-04 22:47:40.853533"], ["updated_at", "2019-03-04 22:47:40.853533"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Upper Body B"], ["user_id", 2], ["created_at", "2019-03-04 22:47:40.860241"], ["updated_at", "2019-03-04 22:47:40.860241"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Leg Day"], ["user_id", 1], ["created_at", "2019-03-04 22:47:40.864905"], ["updated_at", "2019-03-04 22:47:40.864905"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mExercise Create (0.6ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bench Press"], ["created_at", "2019-03-04 22:47:40.869331"], ["updated_at", "2019-03-04 22:47:40.869331"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mExercise Create (0.4ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Curls"], ["created_at", "2019-03-04 22:47:40.873686"], ["updated_at", "2019-03-04 22:47:40.873686"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mExercise Create (0.4ms)[0m  [1m[32mINSERT INTO "exercises" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Deadlifts"], ["created_at", "2019-03-04 22:47:40.877603"], ["updated_at", "2019-03-04 22:47:40.877603"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mExercise Load (0.1ms)[0m  [1m[34mSELECT  "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mWorkoutExercise Create (0.4ms)[0m  [1m[32mINSERT INTO "workout_exercises" ("workout_id", "exercise_id", "sets", "reps", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["workout_id", 4], ["exercise_id", 13], ["sets", 4], ["reps", 12], ["weight", "100 lbs"], ["created_at", "2019-03-04 22:47:40.885941"], ["updated_at", "2019-03-04 22:47:40.885941"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mExercise Load (0.1ms)[0m  [1m[34mSELECT  "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mWorkoutExercise Create (0.4ms)[0m  [1m[32mINSERT INTO "workout_exercises" ("workout_id", "exercise_id", "sets", "reps", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["workout_id", 5], ["exercise_id", 14], ["sets", 3], ["reps", 25], ["weight", "30 lbs"], ["created_at", "2019-03-04 22:47:40.891809"], ["updated_at", "2019-03-04 22:47:40.891809"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mExercise Load (0.1ms)[0m  [1m[34mSELECT  "exercises".* FROM "exercises" WHERE "exercises"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mWorkoutExercise Create (0.6ms)[0m  [1m[32mINSERT INTO "workout_exercises" ("workout_id", "exercise_id", "sets", "reps", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["workout_id", 6], ["exercise_id", 15], ["sets", 5], ["reps", 8], ["weight", "95 lbs"], ["created_at", "2019-03-04 22:47:40.897364"], ["updated_at", "2019-03-04 22:47:40.897364"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
