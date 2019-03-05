@@ -603,3 +603,171 @@ Migrating to AddUsernameToUsers (20190304223916)
   [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
   ↳ db/seeds.rb:19
   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddPasswordDigestToUsers (20190305144342)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  ↳ db/migrate/20190305144342_add_password_digest_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190305144342"]]
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2019-03-05 09:47:14 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/willulman/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/willulman/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/willulman/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (9.5ms)
+Completed 200 OK in 34ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:47:19 -0500
+Processing by SessionsController#new as HTML
+Filter chain halted as :require_login rendered or redirected
+Completed 403 Forbidden in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:48:36 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 1264ms (Views: 1261.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:49:42 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:51:23 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:51:34 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:51:38 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:51:45 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:51:51 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-03-05 09:51:57 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 77ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-03-05 09:52:17 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-03-05 09:52:25 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-03-05 09:52:49 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2ssDSegbEzZduZmQwUbV4ITIzym1RDknQaLFUFiM6891iycuC5Ya3u9tU0QJ7SzKZoVcqCAe6Dy36+esSfNl0Q==", "user"=>{"username"=>"will", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?)[0m  [["username", "will"], ["created_at", "2019-03-05 14:52:49.969111"], ["updated_at", "2019-03-05 14:52:49.969111"], ["password_digest", "$2a$10$ruuNQwfHOfebCGlIsqonp.H89cut6/xyqMcsztJKSdEHHxF9.x.fK"]]
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 169ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-03-05 09:55:49 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 110ms (Views: 86.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-03-05 09:56:01 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cFIFfa++XScoa9oyTzt1FMQ0H5hXYD8lyg+bocroVPbfEiEaTDNUz5q/EOaHkIw+JnmMGcI67j48Rrld25fa6A==", "user"=>{"username"=>"will", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?)[0m  [["username", "will"], ["created_at", "2019-03-05 14:56:01.431625"], ["updated_at", "2019-03-05 14:56:01.431625"], ["password_digest", "$2a$10$rrznrvrtmnGZMwsg7oygV.qSuaGoWzUSi7Lq2ubdfB7RZwS37j8AG"]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/workouts
+Completed 302 Found in 84ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2019-03-05 09:56:01 -0500
+Processing by WorkoutsController#index as HTML
+  Rendering workouts/index.html.erb within layouts/application
+  Rendered workouts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 119ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:59:21 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (373.6ms)
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x00007fd330ae4290>:0x00007fd32faa28f0>
+Did you mean?  logout_path
+               font_path):
+    13:   <%= submit_tag("Login") %>
+    14: <% end %>
+    15: 
+    16: <%= link_to("Homepage", root_path) %>
+  
+app/views/sessions/new.html.erb:16:in `_app_views_sessions_new_html_erb___3102845766608252632_70272515777780'
+Started GET "/login" for 127.0.0.1 at 2019-03-05 09:59:28 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
